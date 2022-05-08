@@ -1,0 +1,496 @@
+
+/* -----------Common------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    max-width: 1140px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+
+/* -------Top-Header-Section-------- */
+
+.top-header-section {
+  background: #173a69;
+  padding: 7px 0;
+}
+.top-header-section .top-header {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.top-header .left-column{
+  width: 50%;
+}
+.top-header .right-column {
+  width: 50%;
+}
+.top-header .left-column a {
+  font-size: 13px;
+  color: #fff;
+  transition: 0.3s;
+}
+.top-header .left-column a:hover{
+  color: rgba(255, 255, 255, 0.637);
+}
+.top-header .left-column .email {
+  margin-left: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.top-header .left-column .email:hover{
+  color: rgba(255, 255, 255, 0.637);
+}
+.top-header .left-column .phone i {
+  transform: rotate(-50deg);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.top-header .left-column .phone i:hover{
+  color: rgba(255, 255, 255, 0.637);
+}
+.top-header .left-column i {
+  margin-right: 10px;
+  font-size: 15px;
+}
+.top-header .right-column {
+  text-align: right;
+}
+.top-header .right-column i {
+  padding-right: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.top-header .right-column i:hover{
+  color: rgba(255, 255, 255, 0.637);
+}
+.top-header .right-column a{
+  color: #fff;
+}
+  
+  /* --------Header-Menu-Section----------- */
+
+.header-menu-section .main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.header-menu-section .header-logo{
+  width: 25%;
+}
+.header-menu-section .header-logo img {
+  margin-top: 12px;
+  width: 135px;
+  height: 74px;
+  object-fit: cover;
+}
+.header-menu-section .menu-item {
+  width: 72%;
+  margin: auto;
+}
+.header-menu-section ul {
+  float: right;
+  flex-wrap: wrap;
+}
+.slicknav_menu{
+  display: none;
+}
+.header-menu-section ul li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 74px;
+}
+.header-menu-section .menu-item ul li a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+.header-menu-section .menu-item ul li a:hover{
+  color: #173a69;
+}
+.header-menu-section .menu-item ul li a:after {
+  content: "";
+  background: #173a69;
+  width: calc(100% + 25px);
+  height: 3px;
+  position: absolute;
+  top: 52px;
+  left: 50%;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateX(-50%);
+}
+.header-menu-section .menu-item ul li a:hover:after{
+  opacity: 1;
+}
+.header-menu-section ul li:last-child {
+  padding-right: 0;
+}
+
+/*---------Slider-Section-About--------*/
+
+.slider-section-about{
+    background-image: url(../image/Section-Banner.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-section-about .about-slider-caption{
+    text-align: center;
+    color:#fff;
+    padding: 95px 0;
+}
+.slider-section-about .about-slider-caption h2{
+    font-size: 30px;
+    padding: 2px 0;
+    font-weight: 800;
+}
+
+/* ---------Contact-Section---------- */
+.contact-section .form-column{
+    width: 65%;
+}
+.contact-section{
+    margin-top: 30px;
+}
+.contact-section .contact-form .text-type{
+    width: 44%;
+    padding: 10px 12px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+.contact-section .contact-form .text-email{
+    width: 44%;
+    padding: 10px 12px;
+    margin: 10px 10px;
+    font-size: 16px;
+}
+.contact-section .Contact-item{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contact-section .Contact-item .form-column p{
+    padding: 20px 0;
+}
+.contact-section .contact-form textarea{
+    height: 150px;
+    font-family: 'Open Sans', sans-serif;
+}
+.contact-section .contact-form input, textarea{
+    width: 90%;
+    padding: 10px 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.contact-section .contact-form .sub-button{
+    padding: 15px 50px;
+    font-size: 16px;
+    background: #173a69;
+    color: #fff;
+    border: none;
+    margin-top: 15px;
+}
+.contact-section .cintact-icon-column{
+    width: 30%;
+    padding-right: 12px;
+}
+.contact-section .contact-icon{
+    padding: 15px 0;
+}
+.contact-section .contact-icon li{
+    list-style: none;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #173a69;
+
+}
+.contact-section .contact-icon i{
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+
+/* -----------Get-started-Section------------ */
+
+.get-started-section{
+    background: #173a69;
+    width: 100%;
+    padding: 85px 0;
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+.get-started-section .get-number{
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+
+/* --------Futter-Banding-Section-------- */
+.futter-banding{
+    text-align: center;
+    padding: 60px 0;
+}
+.futter-socal-icon{
+    padding: 10px 0;
+}
+.futter-socal-icon i{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #173a69;
+    color: #173a69;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    margin: 0 10px;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.futter-socal-icon i:hover{
+    background: #173a69;
+    color: #fff;
+}
+/*--------Futter-Section--------> */
+.futter-section{
+    background: #000000;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+/*---------Responcive---------*/
+@media only screen and (max-width: 1200px) {
+  .header-menu-section .header-logo {
+    width: 14%;
+  }
+  .header-menu-section .menu-item {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .header-menu-section ul li {
+    padding-right: 60px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header-menu-section ul li {
+    padding-right: 50px;
+  }
+}
+@media only screen and (max-width: 989px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .header-menu-section ul li {
+    padding-right: 35px;
+  }
+  .slicknav_menu{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    text-align: right;
+  }
+  .slicknav_menutxt{
+    margin-right: 40px;
+    opacity: 0;
+  }
+  .slicknav_nav{
+    list-style: none;
+    background-color: #173a69;
+    width: 260px;
+    padding: 20px 30px;
+    margin-top: 35px;
+  }
+  .slicknav_nav li{
+    border-bottom: 1px solid #aaaaaa;
+    margin: 15px 0;
+  }
+
+  .slicknav_nav a{
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+  }
+
+  .slicknav_collapsed{
+    position: relative;
+  }
+  .slicknav_collapsed::after{
+    content: '';
+    background-image: url(../image/menu-icon\ .png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 39%;
+    height: 28px;
+    left: 0;
+  }
+  .slicknav_open::after{
+    content: '';
+    background-image: url(../image/menu-Cros-icon\ .png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 12%;
+    height: 36px;
+    right: 50px;
+  }
+  .top-header .right-column i{
+    padding-left: 20px;
+  }
+  .top-header .right-column i:last-child {
+    padding-right: 0px;
+  }
+  #main-menu{
+    display: none;
+  }
+  .contact-section .form-column {
+    width: 100%;
+  }
+  .contact-section .contact-form .text-email {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .contact-section .cintact-icon-column {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .contact-section .contact-form .text-type {
+  width: 100%;
+  }
+.contact-section .contact-form input, textarea {
+  width: 100%;
+  }
+
+}
+@media only screen and (max-width: 800px) {
+
+}
+@media only screen and (max-width: 768px) {
+  .contact-section .Contact-item {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .top-header .left-column{
+    width: 70%;
+  }
+  .top-header .right-column {
+    width: 30%;
+  }
+  .top-header .left-column .email {
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .slider-section .slider-caption h1 {
+    font-size: 50px;
+  }
+  .futter-banding img {
+    width: 200px;
+    height: 105px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .get-started-section {
+    padding: 55px 0;
+  }
+  .futter-banding {
+    padding-top: 65px;
+    padding-bottom: 32px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .top-header .left-column .email {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .top-header .left-column {
+    width: 100%;
+  }
+  .slicknav_collapsed::after {
+    top: 28px;
+  }
+  .slicknav_open::after{
+    top: 28px;
+  }
+  .slicknav_nav{
+    margin-top: 66px;
+  }
+  .top-header .right-column {
+    width: 100%;
+    text-align: left;
+    padding-top: 10px;
+  }
+  .top-header .right-column i:first-child{
+    padding-left: 0;
+  }
+  .top-header .right-column a{
+    padding-right: 20px;
+  }
+  .get-started-section p {
+    font-size: 20px;
+  }
+  .get-started-section .get-number {
+    font-size: 20px;
+  }
+
+  .futter-section {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .slider-section .slider-caption h1 {
+    font-size: 40px;
+  }
+
+}
+@media only screen and (max-width: 380px) {
+  .gallery-section .image-content h3 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .slicknav_collapsed::after {
+    top: 30px;
+  }
+  .slicknav_open::after{
+    top: 30px;
+  }
+  .slicknav_nav{
+    margin-top: 70px;
+  }
+}
